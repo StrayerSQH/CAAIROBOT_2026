@@ -1,0 +1,5 @@
+"D:\RuanJianChengXu1\EmbededSystem\Clion\Clion202501\CLion 2025.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/RuanJianChengXu1/EmbededSystem/STM32CLT/STM32CubeCLT_1.18.0/Ninja/bin/ninja.exe -DCMAKE_C_COMPILER=D:/RuanJianChengXu1/EmbededSystem/STM32CLT/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=D:/RuanJianChengXu1/EmbededSystem/STM32CLT/STM32CubeCLT_1.18.0/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -G Ninja -S D:\SMartVehicle\Models\2026_AICUP_STM32F407VET6 -B D:\SMartVehicle\Models\2026_AICUP_STM32F407VET6\cmake-build-debug
+Build type: Debug
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: D:/SMartVehicle/Models/2026_AICUP_STM32F407VET6/cmake-build-debug

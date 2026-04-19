@@ -1,0 +1,6 @@
+D:/SMartVehicle/2026AICUP/STM32/Sender/Sender/cmake-build-debug/CMakeFiles/Sender.dir
+D:/SMartVehicle/2026AICUP/STM32/Sender/Sender/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/SMartVehicle/2026AICUP/STM32/Sender/Sender/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/SMartVehicle/2026AICUP/STM32/Sender/Sender/cmake-build-debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+D:/SMartVehicle/2026AICUP/STM32/Sender/Sender/cmake-build-debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+D:/SMartVehicle/2026AICUP/STM32/Sender/Sender/cmake-build-debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
