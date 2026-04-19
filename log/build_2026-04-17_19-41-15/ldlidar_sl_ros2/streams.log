@@ -1,0 +1,33 @@
+[0.126s] Invoking command in '/home/strayer/ros2_ws/build/ldlidar_sl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/strayer/ros2_ws/build/ldlidar_sl_ros2 -- -j4 -l4
+[1.805s] [100%] Built target ldlidar_sl_ros2_node
+[1.811s] Invoked command in '/home/strayer/ros2_ws/build/ldlidar_sl_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --build /home/strayer/ros2_ws/build/ldlidar_sl_ros2 -- -j4 -l4
+[1.856s] Invoking command in '/home/strayer/ros2_ws/build/ldlidar_sl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/strayer/ros2_ws/build/ldlidar_sl_ros2
+[3.510s] -- Install configuration: ""
+[3.512s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/lib/ldlidar_sl_ros2/ldlidar_sl_ros2_node
+[3.512s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch
+[3.513s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/ld14p.launch.py
+[3.513s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/ld14.launch.py
+[3.515s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/viewer_ld14.launch.py
+[3.516s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/viewer_ld14p.launch.py
+[3.519s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//rviz2
+[3.521s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//rviz2/ldlidar.rviz
+[3.522s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts
+[3.525s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/ldlidar.rules
+[3.526s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/create_udev_rules.sh
+[3.526s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/delete_udev_rules.sh
+[3.529s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_sl_ros2
+[3.531s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_sl_ros2
+[3.532s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/ament_prefix_path.sh
+[3.533s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/ament_prefix_path.dsv
+[3.533s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/path.sh
+[3.534s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/path.dsv
+[3.535s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.bash
+[3.536s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.sh
+[3.536s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.zsh
+[3.537s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.dsv
+[3.538s] -- Installing: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/package.dsv
+[3.539s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/packages/ldlidar_sl_ros2
+[3.540s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/cmake/ldlidar_sl_ros2Config.cmake
+[3.541s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/cmake/ldlidar_sl_ros2Config-version.cmake
+[3.542s] -- Up-to-date: /home/strayer/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/package.xml
+[3.542s] Invoked command in '/home/strayer/ros2_ws/build/ldlidar_sl_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/navigation:/opt/ros/humble /usr/bin/cmake --install /home/strayer/ros2_ws/build/ldlidar_sl_ros2

@@ -1,0 +1,32 @@
+slam_toolbox:
+  ros__parameters:
+    # QoS 设置
+    qos_overrides:
+      scan:
+        subscription:
+          reliability: best_effort
+    
+    # 基本参数
+    scan_topic: /scan
+    mode: mapping
+    
+    # 帧设置 - 关键修改
+    map_frame: map
+    base_frame: base_link
+    odom_frame: base_link  # 将 odom 帧设为 base_link，绕过里程计需求
+    
+    # 其他参数
+    use_sim_time: false
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    stack_size: 40000000
+    
+    # 激光扫描参数
+    minimum_time_interval: 0.5
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.5
+    
+    # 扫描匹配参数
+    resolution: 0.05
+    max_laser_range: 12.0
+    scan_queue_size: 10
