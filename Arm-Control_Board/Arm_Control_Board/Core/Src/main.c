@@ -130,7 +130,7 @@ int main(void)
     OLED_DisPlay_On();
     OLED_NewFrame();
     OLED_DrawImage(0, 5, &ScuImg, OLED_COLOR_NORMAL);
-    HAL_Delay(2000);
+    HAL_Delay(1000);
     OLED_ShowFrame();
 
     Servo_Init(&mechanical_claw_servo, &htim3, TIM_CHANNEL_1);
