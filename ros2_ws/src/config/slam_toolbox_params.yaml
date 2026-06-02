@@ -1,0 +1,13 @@
+slam_toolbox:
+  ros__parameters:
+    # 核心修复：设置与雷达匹配的QoS策略
+    scan_topic.qos_overrides./subscription.reliability: "reliable"
+    
+    use_sim_time: false
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+    scan_topic: /scan
+    mode: mapping
+    transform_timeout: 0.2
+    minimum_time_interval: 0.5

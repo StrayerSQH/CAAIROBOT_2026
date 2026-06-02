@@ -1,0 +1,19 @@
+slam_toolbox:
+  ros__parameters:
+    qos_overrides:
+      scan:
+        subscription:
+          reliability: best_effort
+    scan_topic: /scan
+    mode: mapping
+    map_frame: map
+    odom_frame: odom
+    base_frame: base_link
+    
+    # 平衡参数（速度与精度的折中）
+    resolution: 0.08               # 8cm 格子（比默认粗一点，但快很多）
+    throttle_scans: 5              # 每5帧处理1帧
+    scan_queue_size: 30
+    transform_timeout: 0.3
+    max_laser_range: 12.0
+    use_sim_time: false

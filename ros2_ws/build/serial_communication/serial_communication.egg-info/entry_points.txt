@@ -1,0 +1,4 @@
+[console_scripts]
+stm32_reciever = serial_communication.stm32_receiver:main
+stm32_sender = serial_communication.stm32_sender:main
+

@@ -1,0 +1,156 @@
+[0.000000] (-) TimerEvent: {}
+[0.002092] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.003551] (-) JobUnselected: {'identifier': 'navigation'}
+[0.004581] (serial_communication) JobQueued: {'identifier': 'serial_communication', 'dependencies': OrderedDict()}
+[0.005136] (serial_communication) JobStarted: {'identifier': 'serial_communication'}
+[0.095576] (-) TimerEvent: {}
+[0.199974] (-) TimerEvent: {}
+[0.313637] (-) TimerEvent: {}
+[0.415493] (-) TimerEvent: {}
+[0.517588] (-) TimerEvent: {}
+[0.622182] (-) TimerEvent: {}
+[0.727918] (-) TimerEvent: {}
+[0.830182] (-) TimerEvent: {}
+[0.933272] (-) TimerEvent: {}
+[1.035620] (-) TimerEvent: {}
+[1.137687] (-) TimerEvent: {}
+[1.239641] (-) TimerEvent: {}
+[1.342159] (-) TimerEvent: {}
+[1.443801] (-) TimerEvent: {}
+[1.545068] (-) TimerEvent: {}
+[1.646920] (-) TimerEvent: {}
+[1.749218] (-) TimerEvent: {}
+[1.850971] (-) TimerEvent: {}
+[1.952732] (-) TimerEvent: {}
+[2.053604] (-) TimerEvent: {}
+[2.155029] (-) TimerEvent: {}
+[2.256731] (-) TimerEvent: {}
+[2.358212] (-) TimerEvent: {}
+[2.459219] (-) TimerEvent: {}
+[2.561246] (-) TimerEvent: {}
+[2.663402] (-) TimerEvent: {}
+[2.764799] (-) TimerEvent: {}
+[2.866417] (-) TimerEvent: {}
+[2.969121] (-) TimerEvent: {}
+[3.071987] (-) TimerEvent: {}
+[3.174277] (-) TimerEvent: {}
+[3.275749] (-) TimerEvent: {}
+[3.377060] (-) TimerEvent: {}
+[3.478889] (-) TimerEvent: {}
+[3.582055] (-) TimerEvent: {}
+[3.685971] (-) TimerEvent: {}
+[3.791540] (-) TimerEvent: {}
+[3.898599] (-) TimerEvent: {}
+[4.013660] (-) TimerEvent: {}
+[4.116434] (-) TimerEvent: {}
+[4.220293] (-) TimerEvent: {}
+[4.322537] (-) TimerEvent: {}
+[4.424809] (-) TimerEvent: {}
+[4.527772] (-) TimerEvent: {}
+[4.630336] (-) TimerEvent: {}
+[4.731868] (-) TimerEvent: {}
+[4.833516] (-) TimerEvent: {}
+[4.935408] (-) TimerEvent: {}
+[5.036971] (-) TimerEvent: {}
+[5.138495] (-) TimerEvent: {}
+[5.240712] (-) TimerEvent: {}
+[5.342841] (-) TimerEvent: {}
+[5.444793] (-) TimerEvent: {}
+[5.549755] (-) TimerEvent: {}
+[5.651639] (-) TimerEvent: {}
+[5.753328] (-) TimerEvent: {}
+[5.855267] (-) TimerEvent: {}
+[5.957437] (-) TimerEvent: {}
+[6.059581] (-) TimerEvent: {}
+[6.162686] (-) TimerEvent: {}
+[6.264606] (-) TimerEvent: {}
+[6.367525] (-) TimerEvent: {}
+[6.469219] (-) TimerEvent: {}
+[6.571018] (-) TimerEvent: {}
+[6.675729] (-) TimerEvent: {}
+[6.777475] (-) TimerEvent: {}
+[6.878930] (-) TimerEvent: {}
+[6.988884] (-) TimerEvent: {}
+[7.090488] (-) TimerEvent: {}
+[7.192906] (-) TimerEvent: {}
+[7.294814] (-) TimerEvent: {}
+[7.408235] (-) TimerEvent: {}
+[7.511421] (-) TimerEvent: {}
+[7.615124] (-) TimerEvent: {}
+[7.717943] (-) TimerEvent: {}
+[7.819768] (-) TimerEvent: {}
+[7.923292] (-) TimerEvent: {}
+[8.026185] (-) TimerEvent: {}
+[8.129813] (-) TimerEvent: {}
+[8.236972] (-) TimerEvent: {}
+[8.341277] (-) TimerEvent: {}
+[8.446607] (-) TimerEvent: {}
+[8.557778] (serial_communication) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/serial_communication', 'build', '--build-base', '/home/strayer/ros2_ws/build/serial_communication/build', 'install', '--record', '/home/strayer/ros2_ws/build/serial_communication/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/strayer/ros2_ws/src/serial_communication', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'strayer', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/strayer', 'OLDPWD': '/home/strayer/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3618', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/strayer/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'strayer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'strayer', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/strayer/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Strayer-Desktop:@/tmp/.ICE-unix/1208,unix/Strayer-Desktop:/tmp/.ICE-unix/1208', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/1ca2d669_401f_4343_b78c_43263b27c7d7', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UJY9M3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/strayer/ros2_ws/install/nav2:/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/navigation:/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/strayer/ros2_ws/build/serial_communication', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/strayer/ros2_ws/build/serial_communication/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages:/home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages:/home/strayer/ros2_ws/install/navigation/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/strayer/ros2_ws/install/nav2:/home/strayer/ros2_ws/install/ldlidar_sl_ros2'}, 'shell': False}
+[8.575713] (-) TimerEvent: {}
+[8.677054] (-) TimerEvent: {}
+[8.779415] (-) TimerEvent: {}
+[8.882330] (-) TimerEvent: {}
+[8.986741] (-) TimerEvent: {}
+[9.088998] (-) TimerEvent: {}
+[9.190712] (-) TimerEvent: {}
+[9.292865] (-) TimerEvent: {}
+[9.395592] (-) TimerEvent: {}
+[9.498285] (-) TimerEvent: {}
+[9.599935] (-) TimerEvent: {}
+[9.701778] (-) TimerEvent: {}
+[9.803380] (-) TimerEvent: {}
+[9.905679] (-) TimerEvent: {}
+[10.008585] (-) TimerEvent: {}
+[10.111821] (-) TimerEvent: {}
+[10.214556] (-) TimerEvent: {}
+[10.318672] (-) TimerEvent: {}
+[10.420249] (-) TimerEvent: {}
+[10.523855] (-) TimerEvent: {}
+[10.625553] (-) TimerEvent: {}
+[10.727443] (-) TimerEvent: {}
+[10.829705] (-) TimerEvent: {}
+[10.931501] (-) TimerEvent: {}
+[11.033119] (-) TimerEvent: {}
+[11.137248] (-) TimerEvent: {}
+[11.238810] (-) TimerEvent: {}
+[11.342964] (-) TimerEvent: {}
+[11.445144] (-) TimerEvent: {}
+[11.547211] (-) TimerEvent: {}
+[11.648336] (-) TimerEvent: {}
+[11.750086] (-) TimerEvent: {}
+[11.818500] (serial_communication) StdoutLine: {'line': b'running egg_info\n'}
+[11.828333] (serial_communication) StdoutLine: {'line': b'writing ../../build/serial_communication/serial_communication.egg-info/PKG-INFO\n'}
+[11.834905] (serial_communication) StdoutLine: {'line': b'writing dependency_links to ../../build/serial_communication/serial_communication.egg-info/dependency_links.txt\n'}
+[11.846528] (serial_communication) StdoutLine: {'line': b'writing entry points to ../../build/serial_communication/serial_communication.egg-info/entry_points.txt\n'}
+[11.850372] (-) TimerEvent: {}
+[11.852163] (serial_communication) StdoutLine: {'line': b'writing requirements to ../../build/serial_communication/serial_communication.egg-info/requires.txt\n'}
+[11.854660] (serial_communication) StdoutLine: {'line': b'writing top-level names to ../../build/serial_communication/serial_communication.egg-info/top_level.txt\n'}
+[11.877025] (serial_communication) StdoutLine: {'line': b"reading manifest file '../../build/serial_communication/serial_communication.egg-info/SOURCES.txt'\n"}
+[11.886043] (serial_communication) StdoutLine: {'line': b"writing manifest file '../../build/serial_communication/serial_communication.egg-info/SOURCES.txt'\n"}
+[11.888324] (serial_communication) StdoutLine: {'line': b'running build\n'}
+[11.889858] (serial_communication) StdoutLine: {'line': b'running build_py\n'}
+[11.893169] (serial_communication) StdoutLine: {'line': b'copying serial_communication/stm32_receiver.py -> /home/strayer/ros2_ws/build/serial_communication/build/lib/serial_communication\n'}
+[11.897283] (serial_communication) StdoutLine: {'line': b'running install\n'}
+[11.901128] (serial_communication) StdoutLine: {'line': b'running install_lib\n'}
+[11.916063] (serial_communication) StdoutLine: {'line': b'copying /home/strayer/ros2_ws/build/serial_communication/build/lib/serial_communication/stm32_receiver.py -> /home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages/serial_communication\n'}
+[11.920262] (serial_communication) StdoutLine: {'line': b'byte-compiling /home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages/serial_communication/stm32_receiver.py to stm32_receiver.cpython-310.pyc\n'}
+[11.942134] (serial_communication) StdoutLine: {'line': b'running install_data\n'}
+[11.954911] (serial_communication) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.957179] (-) TimerEvent: {}
+[11.973769] (serial_communication) StdoutLine: {'line': b"removing '/home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages/serial_communication-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[11.979649] (serial_communication) StdoutLine: {'line': b'Copying ../../build/serial_communication/serial_communication.egg-info to /home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages/serial_communication-0.0.0-py3.10.egg-info\n'}
+[12.009375] (serial_communication) StdoutLine: {'line': b'running install_scripts\n'}
+[12.058128] (-) TimerEvent: {}
+[12.162450] (-) TimerEvent: {}
+[12.233548] (serial_communication) StdoutLine: {'line': b'Installing stm32_reciever script to /home/strayer/ros2_ws/install/serial_communication/lib/serial_communication\n'}
+[12.236399] (serial_communication) StdoutLine: {'line': b'Installing stm32_sender script to /home/strayer/ros2_ws/install/serial_communication/lib/serial_communication\n'}
+[12.242181] (serial_communication) StdoutLine: {'line': b"writing list of installed files to '/home/strayer/ros2_ws/build/serial_communication/install.log'\n"}
+[12.263618] (-) TimerEvent: {}
+[12.377254] (-) TimerEvent: {}
+[12.482199] (-) TimerEvent: {}
+[12.585260] (-) TimerEvent: {}
+[12.642152] (serial_communication) CommandEnded: {'returncode': 0}
+[12.691671] (-) TimerEvent: {}
+[12.795041] (-) TimerEvent: {}
+[12.809873] (serial_communication) JobEnded: {'identifier': 'serial_communication', 'rc': 0}
+[12.820027] (-) EventReactorShutdown: {}

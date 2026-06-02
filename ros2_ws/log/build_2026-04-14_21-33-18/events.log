@@ -1,0 +1,112 @@
+[0.000000] (-) TimerEvent: {}
+[0.001613] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.001741] (-) JobUnselected: {'identifier': 'serial_communication'}
+[0.001830] (nav2) JobQueued: {'identifier': 'nav2', 'dependencies': OrderedDict([('ldlidar_sl_ros2', '/home/strayer/ros2_ws/install/ldlidar_sl_ros2'), ('serial_communication', '/home/strayer/ros2_ws/install/serial_communication')])}
+[0.001930] (nav2) JobStarted: {'identifier': 'nav2'}
+[0.074381] (nav2) JobProgress: {'identifier': 'nav2', 'progress': 'cmake'}
+[0.076896] (nav2) Command: {'cmd': ['/usr/bin/cmake', '/home/strayer/ros2_ws/src/nav2', '-DCMAKE_INSTALL_PREFIX=/home/strayer/ros2_ws/install/nav2'], 'cwd': '/home/strayer/ros2_ws/build/nav2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'strayer'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/strayer'), ('OLDPWD', '/home/strayer/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2151'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/strayer/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'strayer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'strayer'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/strayer/.local/bin:/home/strayer/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Strayer-Desktop:@/tmp/.ICE-unix/1518,unix/Strayer-Desktop:/tmp/.ICE-unix/1518'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8edf83f1_1b6a_495b_a430_867d511ebac3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/strayer/ros2_ws/build/nav2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/home/strayer/ros2_ws/install/serial_communication:/opt/ros/humble')]), 'shell': False}
+[0.098984] (-) TimerEvent: {}
+[0.200075] (-) TimerEvent: {}
+[0.301007] (-) TimerEvent: {}
+[0.402115] (-) TimerEvent: {}
+[0.502987] (-) TimerEvent: {}
+[0.603875] (-) TimerEvent: {}
+[0.705186] (-) TimerEvent: {}
+[0.806324] (-) TimerEvent: {}
+[0.907325] (-) TimerEvent: {}
+[1.008237] (-) TimerEvent: {}
+[1.109287] (-) TimerEvent: {}
+[1.210446] (-) TimerEvent: {}
+[1.296400] (nav2) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.310713] (-) TimerEvent: {}
+[1.411527] (-) TimerEvent: {}
+[1.512583] (-) TimerEvent: {}
+[1.613632] (-) TimerEvent: {}
+[1.714461] (-) TimerEvent: {}
+[1.815418] (-) TimerEvent: {}
+[1.916415] (-) TimerEvent: {}
+[2.017183] (-) TimerEvent: {}
+[2.045350] (nav2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.091556] (nav2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.117357] (-) TimerEvent: {}
+[2.218157] (-) TimerEvent: {}
+[2.319110] (-) TimerEvent: {}
+[2.420136] (-) TimerEvent: {}
+[2.478942] (nav2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.505307] (nav2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.507373] (nav2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.510076] (nav2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.520291] (-) TimerEvent: {}
+[2.524813] (nav2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.620531] (-) TimerEvent: {}
+[2.721500] (-) TimerEvent: {}
+[2.822542] (-) TimerEvent: {}
+[2.912752] (nav2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.922798] (-) TimerEvent: {}
+[2.941243] (nav2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.942196] (nav2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.943786] (nav2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.009155] (nav2) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.022965] (-) TimerEvent: {}
+[3.123663] (-) TimerEvent: {}
+[3.224454] (-) TimerEvent: {}
+[3.325250] (-) TimerEvent: {}
+[3.425931] (-) TimerEvent: {}
+[3.526694] (-) TimerEvent: {}
+[3.627428] (-) TimerEvent: {}
+[3.728282] (-) TimerEvent: {}
+[3.829170] (-) TimerEvent: {}
+[3.842547] (nav2) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.929478] (-) TimerEvent: {}
+[4.030292] (-) TimerEvent: {}
+[4.131116] (-) TimerEvent: {}
+[4.232209] (-) TimerEvent: {}
+[4.332902] (-) TimerEvent: {}
+[4.433631] (-) TimerEvent: {}
+[4.534337] (-) TimerEvent: {}
+[4.636881] (-) TimerEvent: {}
+[4.738022] (-) TimerEvent: {}
+[4.838976] (-) TimerEvent: {}
+[4.941423] (-) TimerEvent: {}
+[5.043630] (-) TimerEvent: {}
+[5.149231] (-) TimerEvent: {}
+[5.211825] (nav2) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.236566] (nav2) StdoutLine: {'line': b'-- Generating done\n'}
+[5.249783] (-) TimerEvent: {}
+[5.253436] (nav2) StdoutLine: {'line': b'-- Build files have been written to: /home/strayer/ros2_ws/build/nav2\n'}
+[5.280579] (nav2) CommandEnded: {'returncode': 0}
+[5.284583] (nav2) JobProgress: {'identifier': 'nav2', 'progress': 'build'}
+[5.289727] (nav2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/strayer/ros2_ws/build/nav2', '--', '-j4', '-l4'], 'cwd': '/home/strayer/ros2_ws/build/nav2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'strayer'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/strayer'), ('OLDPWD', '/home/strayer/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2151'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/strayer/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'strayer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'strayer'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/strayer/.local/bin:/home/strayer/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Strayer-Desktop:@/tmp/.ICE-unix/1518,unix/Strayer-Desktop:/tmp/.ICE-unix/1518'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8edf83f1_1b6a_495b_a430_867d511ebac3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/strayer/ros2_ws/build/nav2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/home/strayer/ros2_ws/install/serial_communication:/opt/ros/humble')]), 'shell': False}
+[5.350104] (-) TimerEvent: {}
+[5.451855] (-) TimerEvent: {}
+[5.534569] (nav2) CommandEnded: {'returncode': 0}
+[5.538747] (nav2) JobProgress: {'identifier': 'nav2', 'progress': 'install'}
+[5.552918] (-) TimerEvent: {}
+[5.597323] (nav2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/strayer/ros2_ws/build/nav2'], 'cwd': '/home/strayer/ros2_ws/build/nav2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'strayer'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/strayer'), ('OLDPWD', '/home/strayer/ros2_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2151'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/strayer/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'strayer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'strayer'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/strayer/.local/bin:/home/strayer/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Strayer-Desktop:@/tmp/.ICE-unix/1518,unix/Strayer-Desktop:/tmp/.ICE-unix/1518'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/8edf83f1_1b6a_495b_a430_867d511ebac3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/strayer/ros2_ws/install/serial_communication:/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/strayer/ros2_ws/build/nav2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/strayer/ros2_ws/install/serial_communication/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/strayer/ros2_ws/install/ldlidar_sl_ros2:/home/strayer/ros2_ws/install/serial_communication:/opt/ros/humble')]), 'shell': False}
+[5.646621] (nav2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.648524] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2//launch\n'}
+[5.649699] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2//launch/navigation.launch.py\n'}
+[5.650613] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2//rviz\n'}
+[5.651366] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2//rviz/nav2_config.rviz\n'}
+[5.653903] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2//config\n'}
+[5.654838] (-) TimerEvent: {}
+[5.655735] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/ament_index/resource_index/package_run_dependencies/nav2\n'}
+[5.657913] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/ament_index/resource_index/parent_prefix_path/nav2\n'}
+[5.659592] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/environment/ament_prefix_path.sh\n'}
+[5.661538] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/environment/ament_prefix_path.dsv\n'}
+[5.662947] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/environment/path.sh\n'}
+[5.664386] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/environment/path.dsv\n'}
+[5.665744] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.bash\n'}
+[5.667241] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.sh\n'}
+[5.668772] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.zsh\n'}
+[5.670164] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.dsv\n'}
+[5.671316] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/package.dsv\n'}
+[5.672896] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/ament_index/resource_index/packages/nav2\n'}
+[5.674650] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/cmake/nav2Config.cmake\n'}
+[5.675622] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/cmake/nav2Config-version.cmake\n'}
+[5.677508] (nav2) StdoutLine: {'line': b'-- Installing: /home/strayer/ros2_ws/install/nav2/share/nav2/package.xml\n'}
+[5.697699] (nav2) CommandEnded: {'returncode': 0}
+[5.755568] (-) TimerEvent: {}
+[5.856848] (-) TimerEvent: {}
+[5.860571] (nav2) JobEnded: {'identifier': 'nav2', 'rc': 0}
+[5.863036] (-) EventReactorShutdown: {}

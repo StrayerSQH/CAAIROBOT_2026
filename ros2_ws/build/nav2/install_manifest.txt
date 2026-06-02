@@ -1,0 +1,17 @@
+/home/strayer/ros2_ws/install/nav2/share/nav2//launch/navigation.launch.py
+/home/strayer/ros2_ws/install/nav2/share/nav2//rviz/nav2_config.rviz
+/home/strayer/ros2_ws/install/nav2/share/ament_index/resource_index/package_run_dependencies/nav2
+/home/strayer/ros2_ws/install/nav2/share/ament_index/resource_index/parent_prefix_path/nav2
+/home/strayer/ros2_ws/install/nav2/share/nav2/environment/ament_prefix_path.sh
+/home/strayer/ros2_ws/install/nav2/share/nav2/environment/ament_prefix_path.dsv
+/home/strayer/ros2_ws/install/nav2/share/nav2/environment/path.sh
+/home/strayer/ros2_ws/install/nav2/share/nav2/environment/path.dsv
+/home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.bash
+/home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.sh
+/home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.zsh
+/home/strayer/ros2_ws/install/nav2/share/nav2/local_setup.dsv
+/home/strayer/ros2_ws/install/nav2/share/nav2/package.dsv
+/home/strayer/ros2_ws/install/nav2/share/ament_index/resource_index/packages/nav2
+/home/strayer/ros2_ws/install/nav2/share/nav2/cmake/nav2Config.cmake
+/home/strayer/ros2_ws/install/nav2/share/nav2/cmake/nav2Config-version.cmake
+/home/strayer/ros2_ws/install/nav2/share/nav2/package.xml
