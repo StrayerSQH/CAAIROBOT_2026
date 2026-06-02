@@ -5,7 +5,8 @@
 #include "ArmCommunication.h"
 
 uint32_t move_steps = 0;
-bool isClose = false;
+bool isPick = false;
+bool isPut = false;
 bool getSteps = false;
 
 void Arm_Serial_Init(void) {
@@ -42,7 +43,8 @@ static void Arm_Receive_ParseFrame(const uint8_t *frame) {
     }
 
     const uint8_t *pData = (const uint8_t *)&frame[1];
-    isClose = (bool) pData[0];
+    isPick = (bool) pData[0];
+    isPut = !isPick;
     uint32_t combined = (pData[1] << 16) | (pData[2] << 8) | pData[3];
 
     move_steps = combined;

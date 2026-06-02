@@ -24,7 +24,8 @@ static uint8_t arm_rxBuf[ARM_RECEIVE_MESSGAE_LEN];
 static uint8_t arm_rxIndex = 0;
 
 extern uint32_t move_steps;
-extern bool isClose;
+extern bool isPick;
+extern bool isPut;
 extern bool getSteps;
 
 void Arm_Serial_Init(void);

@@ -90,12 +90,35 @@ void Move_to_Get(void) {
     HAL_Delay(2000);
 }
 
-void Move_to_Origin(void) {
+void Move_to_Robot(void) {
     Relative_Position_Set_Command(steppers[0].stepper_can_id,
                                   1,
                                   20,
                                   7000,
                                   move_steps);
+    Send_Message_to_Stepper(set_relative_position_command,
+                            sizeof(set_relative_position_command));
+    HAL_Delay(2000);
+}
+
+void Move_to_Box(void) {
+    Relative_Position_Set_Command(steppers[0].stepper_can_id,
+                                  0,
+                                  20,
+                                  7000,
+                                  51200 * 3);
+    Send_Message_to_Stepper(set_relative_position_command,
+                            sizeof(set_relative_position_command));
+    HAL_Delay(2000);
+}
+
+void Move_to_Origin(void) {
+    HAL_Delay(500);
+    Relative_Position_Set_Command(steppers[0].stepper_can_id,
+                                  1,
+                                  20,
+                                  7000,
+                                  51200 * 3);
     Send_Message_to_Stepper(set_relative_position_command,
                             sizeof(set_relative_position_command));
     HAL_Delay(2000);

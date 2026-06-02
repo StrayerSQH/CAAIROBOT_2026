@@ -146,11 +146,20 @@ int main(void)
   {
 
       OLED_Show_Data();
-      if (getSteps && !isClose) {
+      if (getSteps && isPick) {
           Move_to_Get();
-          isClose = true;
+          isPick = false;
           Servo_Set_Angel(&mechanical_claw_servo, 0);
+          Move_to_Robot();
+          move_steps = 0;
+      }
+
+      if (isPut) {
+          Move_to_Box();
+          Servo_Set_Angel(&mechanical_claw_servo, 60);
           Move_to_Origin();
+          Servo_Set_Angel(&mechanical_claw_servo, 0);
+          isPut = false;
       }
 
 
