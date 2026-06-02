@@ -94,11 +94,10 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC1 GPIO Configuration
     PA0-WKUP     ------> ADC1_IN0
-    PA1     ------> ADC1_IN1
     */
-    GPIO_InitStruct.Pin = Joystick_Y_ADC_Pin|Joystick_X_ADC_Pin;
+    GPIO_InitStruct.Pin = Joystick_Y_ADC_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+    HAL_GPIO_Init(Joystick_Y_ADC_GPIO_Port, &GPIO_InitStruct);
 
     /* ADC1 DMA Init */
     /* ADC1 Init */
@@ -136,9 +135,8 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
 
     /**ADC1 GPIO Configuration
     PA0-WKUP     ------> ADC1_IN0
-    PA1     ------> ADC1_IN1
     */
-    HAL_GPIO_DeInit(GPIOA, Joystick_Y_ADC_Pin|Joystick_X_ADC_Pin);
+    HAL_GPIO_DeInit(Joystick_Y_ADC_GPIO_Port, Joystick_Y_ADC_Pin);
 
     /* ADC1 DMA DeInit */
     HAL_DMA_DeInit(adcHandle->DMA_Handle);

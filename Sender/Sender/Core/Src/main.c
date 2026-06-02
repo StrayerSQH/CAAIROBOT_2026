@@ -101,7 +101,21 @@ int main(void)
   MX_I2C1_Init();
   MX_ADC1_Init();
   MX_USART3_UART_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+
+    HAL_GPIO_WritePin(GPIOC, Test_Pin, SET);
+    HAL_GPIO_WritePin(GPIOA, Beep_Pin, SET);
+    HAL_Delay(1000);
+    HAL_GPIO_WritePin(GPIOC, Test_Pin, RESET);
+    HAL_GPIO_WritePin(GPIOA, Beep_Pin, RESET);
+    HAL_Delay(1000);
+    HAL_GPIO_WritePin(GPIOC, Test_Pin, SET);
+    HAL_GPIO_WritePin(GPIOA, Beep_Pin, SET);
+    HAL_Delay(1000);
+    HAL_GPIO_WritePin(GPIOC, Test_Pin, RESET);
+    HAL_GPIO_WritePin(GPIOA, Beep_Pin, RESET);
+    HAL_Delay(1000);
     OLED_Init();
     HAL_Delay(100);
     char oled_buffer[20];
@@ -125,7 +139,7 @@ int main(void)
   {
       OLED_NewFrame();
 
-      HAL_GPIO_WritePin(GPIOA, Test_Pin, RESET);
+      HAL_UART_Transmit(&huart1, (uint8_t*)"hello world", 11, 0xFFFF);
 
 
     snprintf(oled_buffer, sizeof(oled_buffer), "%lu", joystick_values[0]);

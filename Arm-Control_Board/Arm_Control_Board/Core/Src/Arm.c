@@ -50,6 +50,7 @@ void Direction_Init(Stepper *stepper) {
         Send_Message_to_Stepper(set_relative_position_command,
                                 sizeof(set_relative_position_command));
         HAL_Delay(1000);
+
         // 如果电机没有到位则一直在循环里
         while (stepper->isPosition) {
             Position_Question_Command(stepper->stepper_can_id);
@@ -77,6 +78,14 @@ void Direction_Init(Stepper *stepper) {
     stepper->isStall = false;
 }
 
-void Move_to_Position(float x, float z) {
-
+void Move_to_Get(void) {
+    Servo_Set_Angel(&mechanical_claw_servo, 60);
+    Relative_Position_Set_Command(steppers[0].stepper_can_id,
+                                  0,
+                                  20,
+                                  7000,
+                                  move_steps);
+    Send_Message_to_Stepper(set_relative_position_command,
+                            sizeof(set_relative_position_command));
+    HAL_Delay(2000);
 }

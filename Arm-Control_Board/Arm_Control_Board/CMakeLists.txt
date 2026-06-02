@@ -45,7 +45,9 @@ add_executable(${CMAKE_PROJECT_NAME}
         Core/Inc/servo.h
         Core/Src/servo.c
         Core/Inc/Arm.h
-        Core/Src/Arm.c)
+        Core/Src/Arm.c
+        Core/Inc/ArmCommunication.h
+        Core/Src/ArmCommunication.c)
 
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)

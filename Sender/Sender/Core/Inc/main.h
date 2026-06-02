@@ -59,19 +59,19 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_GPIO_Pin GPIO_PIN_13
 #define LED_GPIO_GPIO_Port GPIOC
+#define Test_Pin GPIO_PIN_15
+#define Test_GPIO_Port GPIOC
 #define Joystick_Y_ADC_Pin GPIO_PIN_0
 #define Joystick_Y_ADC_GPIO_Port GPIOA
-#define Joystick_X_ADC_Pin GPIO_PIN_1
-#define Joystick_X_ADC_GPIO_Port GPIOA
+#define Beep_Pin GPIO_PIN_1
+#define Beep_GPIO_Port GPIOA
 #define Joystick_Z_DIG_Pin GPIO_PIN_2
 #define Joystick_Z_DIG_GPIO_Port GPIOA
-#define Test_Pin GPIO_PIN_7
-#define Test_GPIO_Port GPIOA
 #define BluetoothState_GPIO_Pin GPIO_PIN_8
 #define BluetoothState_GPIO_GPIO_Port GPIOA
-#define OLED_SCL_Pin GPIO_PIN_6
+#define OLED_SCL_Pin GPIO_PIN_8
 #define OLED_SCL_GPIO_Port GPIOB
-#define OLED_SDA_Pin GPIO_PIN_7
+#define OLED_SDA_Pin GPIO_PIN_9
 #define OLED_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */

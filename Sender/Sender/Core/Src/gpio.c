@@ -51,30 +51,30 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LED_GPIO_GPIO_Port, LED_GPIO_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOC, LED_GPIO_Pin|Test_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(Test_GPIO_Port, Test_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(Beep_GPIO_Port, Beep_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : LED_GPIO_Pin */
-  GPIO_InitStruct.Pin = LED_GPIO_Pin;
+  /*Configure GPIO pins : LED_GPIO_Pin Test_Pin */
+  GPIO_InitStruct.Pin = LED_GPIO_Pin|Test_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LED_GPIO_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : Beep_Pin */
+  GPIO_InitStruct.Pin = Beep_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(Beep_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : Joystick_Z_DIG_Pin */
   GPIO_InitStruct.Pin = Joystick_Z_DIG_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(Joystick_Z_DIG_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : Test_Pin */
-  GPIO_InitStruct.Pin = Test_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(Test_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : BluetoothState_GPIO_Pin */
   GPIO_InitStruct.Pin = BluetoothState_GPIO_Pin;

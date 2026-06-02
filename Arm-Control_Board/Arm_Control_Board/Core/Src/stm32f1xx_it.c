@@ -22,8 +22,10 @@
 #include "stm32f1xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-/* USER CODE END Includes */
 #include "usart.h"
+#include "ArmCommunication.h"
+#include "42_stepper.h"
+/* USER CODE END Includes */
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
 
@@ -246,7 +248,7 @@ void USART2_IRQHandler(void)
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
     if (huart->Instance == USART1) {
-        //ROS_Receive_From_ROS_ISR();
+        Arm_Receive_ISR();
     }
     else if (huart->Instance == USART2) {
         //Bluetooth_Rx_ISR();

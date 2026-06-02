@@ -7,7 +7,7 @@
 
 #include "42_stepper.h"
 #include "servo.h"
-
+#include "ArmCommunication.h"
 
 extern Servo mechanical_claw_servo;
 extern Servo camera_holder_servo;
@@ -20,7 +20,7 @@ typedef struct {
 void Arm_Init(void);
 void Direction_Init(Stepper *stepper);
 
-void Move_to_Position(float x, float z);
+void Move_to_Get(void);
 
 void Parase_Camera_Coordinate(void);
 

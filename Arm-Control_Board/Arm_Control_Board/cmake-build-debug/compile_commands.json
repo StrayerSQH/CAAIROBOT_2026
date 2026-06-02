@@ -31,6 +31,12 @@
 },
 {
   "directory": "D:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/cmake-build-debug",
+  "command": "D:\\RuanJianChengXu1\\EmbededSystem\\STM32CLT\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Core/Inc -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always -o CMakeFiles\\Arm_Control_Board.dir\\Core\\Src\\ArmCommunication.c.obj -c D:\\SMartVehicle\\2026AICUP\\STM32\\Arm-Control_Board\\Arm_Control_Board\\Core\\Src\\ArmCommunication.c",
+  "file": "D:\\SMartVehicle\\2026AICUP\\STM32\\Arm-Control_Board\\Arm_Control_Board\\Core\\Src\\ArmCommunication.c",
+  "output": "CMakeFiles\\Arm_Control_Board.dir\\Core\\Src\\ArmCommunication.c.obj"
+},
+{
+  "directory": "D:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/cmake-build-debug",
   "command": "D:\\RuanJianChengXu1\\EmbededSystem\\STM32CLT\\STM32CubeCLT_1.18.0\\GNU-tools-for-STM32\\bin\\arm-none-eabi-gcc.exe -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Core/Inc -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/STM32F1xx_HAL_Driver/Inc -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/CMSIS/Device/ST/STM32F1xx/Include -ID:/SMartVehicle/2026AICUP/STM32/Arm-Control_Board/Arm_Control_Board/Drivers/CMSIS/Include  -mcpu=cortex-m3  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -std=gnu11 -fdiagnostics-color=always -o CMakeFiles\\Arm_Control_Board.dir\\Core\\Src\\main.c.obj -c D:\\SMartVehicle\\2026AICUP\\STM32\\Arm-Control_Board\\Arm_Control_Board\\Core\\Src\\main.c",
   "file": "D:\\SMartVehicle\\2026AICUP\\STM32\\Arm-Control_Board\\Arm_Control_Board\\Core\\Src\\main.c",
   "output": "CMakeFiles\\Arm_Control_Board.dir\\Core\\Src\\main.c.obj"

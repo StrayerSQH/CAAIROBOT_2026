@@ -30,6 +30,8 @@
 #include "servo.h"
 #include "Arm.h"
 #include <stdio.h>
+#include "ArmCommunication.h"
+#include <string.h>
 
 /* USER CODE END Includes */
 
@@ -134,7 +136,8 @@ int main(void)
     Servo_Init(&mechanical_claw_servo, &htim3, TIM_CHANNEL_1);
     Stepper_Init(&steppers[0], 1, 5000, 2000);
     Stepper_Init(&steppers[1], 2, 5000, 2000);
-    Arm_Init();
+    Arm_Serial_Init();
+    //Arm_Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -142,10 +145,8 @@ int main(void)
   while (1)
   {
       OLED_Show_Data();
-      Servo_Set_Angel(&mechanical_claw_servo, 60);
+      Move_to_Get();
 
-
-      HAL_Delay(2000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -198,29 +199,18 @@ static void OLED_Show_Data(void) {
     OLED_PrintASCIIString(0, 0, "-----Arm Control-----", &afont8x6, OLED_COLOR_NORMAL);
 
     // 摄像头传入坐标
-    snprintf(oled_buffer, sizeof(oled_buffer), "%lu", 12345);
-    OLED_PrintASCIIString(0, 12, "Coord.:(", &afont8x6, OLED_COLOR_NORMAL);
-    OLED_PrintASCIIString(46, 12, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
-
-    snprintf(oled_buffer, sizeof(oled_buffer), "%lu", 12345);
-    OLED_PrintASCIIString(78, 12, ",", &afont8x6, OLED_COLOR_NORMAL);
-    OLED_PrintASCIIString(84, 12, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
-
-    OLED_PrintASCIIString(114, 12, ")", &afont8x6, OLED_COLOR_NORMAL);
+    snprintf(oled_buffer, sizeof(oled_buffer), "%d", move_steps);
+    OLED_PrintASCIIString(0, 12, "Steps:", &afont8x6, OLED_COLOR_NORMAL);
+    OLED_PrintASCIIString(42, 12, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
 
     // 步进电机步距移动情况
-    snprintf(oled_buffer, sizeof(oled_buffer), "%lu", 12345);
-    OLED_PrintASCIIString(0, 20, "1's Step:", &afont8x6, OLED_COLOR_NORMAL);
-    OLED_PrintASCIIString(54, 20, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
+    snprintf(oled_buffer, sizeof(oled_buffer), "%d", steppers[0].isPosition);
+    OLED_PrintASCIIString(0, 20, "Position:", &afont8x6, OLED_COLOR_NORMAL);
+    OLED_PrintASCIIString(60, 20, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
 
-    snprintf(oled_buffer, sizeof(oled_buffer), "%lu", 12345);
-    OLED_PrintASCIIString(0, 30, "2's Step:", &afont8x6, OLED_COLOR_NORMAL);
-    OLED_PrintASCIIString(54, 30, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
-
-    snprintf(oled_buffer, sizeof(oled_buffer), "%lu", 12345);
-    OLED_PrintASCIIString(0, 40, "3's Step:", &afont8x6, OLED_COLOR_NORMAL);
-    OLED_PrintASCIIString(54, 40, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
-
+    snprintf(oled_buffer, sizeof(oled_buffer), "%d", steppers[0].isStall);
+    OLED_PrintASCIIString(0, 30, "Stall:", &afont8x6, OLED_COLOR_NORMAL);
+    OLED_PrintASCIIString(42, 30, oled_buffer, &afont8x6, OLED_COLOR_NORMAL);
 
     OLED_ShowFrame();
 }
