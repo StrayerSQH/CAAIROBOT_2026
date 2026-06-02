@@ -89,3 +89,14 @@ void Move_to_Get(void) {
                             sizeof(set_relative_position_command));
     HAL_Delay(2000);
 }
+
+void Move_to_Origin(void) {
+    Relative_Position_Set_Command(steppers[0].stepper_can_id,
+                                  1,
+                                  20,
+                                  7000,
+                                  move_steps);
+    Send_Message_to_Stepper(set_relative_position_command,
+                            sizeof(set_relative_position_command));
+    HAL_Delay(2000);
+}

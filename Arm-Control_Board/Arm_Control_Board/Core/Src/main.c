@@ -144,8 +144,15 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
       OLED_Show_Data();
-      Move_to_Get();
+      if (getSteps && !isClose) {
+          Move_to_Get();
+          isClose = true;
+          Servo_Set_Angel(&mechanical_claw_servo, 0);
+          Move_to_Origin();
+      }
+
 
     /* USER CODE END WHILE */
 

@@ -4,7 +4,7 @@
 
 #include "ArmCommunication.h"
 
-uint16_t move_steps = 0;
+uint32_t move_steps = 0;
 bool isClose = false;
 bool getSteps = false;
 
@@ -43,7 +43,7 @@ static void Arm_Receive_ParseFrame(const uint8_t *frame) {
 
     const uint8_t *pData = (const uint8_t *)&frame[1];
     isClose = (bool) pData[0];
-    uint16_t combined = (pData[1] << 8) | pData[2];
+    uint32_t combined = (pData[1] << 16) | (pData[2] << 8) | pData[3];
 
     move_steps = combined;
     getSteps = true;

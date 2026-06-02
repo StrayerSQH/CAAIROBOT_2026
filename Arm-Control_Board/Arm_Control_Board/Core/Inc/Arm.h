@@ -21,6 +21,7 @@ void Arm_Init(void);
 void Direction_Init(Stepper *stepper);
 
 void Move_to_Get(void);
+void Move_to_Origin(void);
 
 void Parase_Camera_Coordinate(void);
 
