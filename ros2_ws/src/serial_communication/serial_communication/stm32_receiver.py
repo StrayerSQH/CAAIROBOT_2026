@@ -14,10 +14,11 @@ from tf2_ros import TransformBroadcaster
 import time
 
 # 定义消息格式常量
-FRAME_HEAD = 0x54
-FRAME_LEN = 25
-DATA_START = 1
-DATA_LEN = 24
+FRAME_HEAD = 0x54        # 帧头
+FRAME_LEN = 26           # 帧总长度（原25字节 + 1字节校验和）
+DATA_START = 1           # 数据起始位置
+DATA_LEN = 24            # 数据长度 (6个float * 4字节)
+CHECKSUM_POS = 25        # 校验和位置（最后一个字节）
 
 class STM32OdomReceiver(Node):
     def __init__(self):
@@ -64,6 +65,7 @@ class STM32OdomReceiver(Node):
         self.buffer = bytearray()
         self.frame_count = 0
         self.error_count = 0
+        self.checksum_error_count = 0  # 新增：校验和错误计数
         
         # 里程计状态变量
         self.x = 0.0
@@ -82,20 +84,48 @@ class STM32OdomReceiver(Node):
         
         # 打印启动信息
         self.get_logger().info("=" * 60)
-        self.get_logger().info("🚀 STM32里程计接收节点已启动")
+        self.get_logger().info("🚀 STM32里程计接收节点已启动（带校验和）")
         self.get_logger().info(f"📡 串口: {port} @ {baudrate}bps")
         self.get_logger().info(f"📏 轮距: {self.wheel_base}m")
         self.get_logger().info(f"🧭 里程计: {self.odom_frame} -> {self.base_frame}")
+        self.get_logger().info(f"🔒 校验方式: 累加和校验")
         self.get_logger().info("=" * 60)
         self.print_header()
     
+    def calculate_checksum(self, data_bytes):
+        """累加和校验：把所有字节加起来，取低8位"""
+        checksum = sum(data_bytes) & 0xFF
+        return checksum
+    
+    def verify_checksum(self, frame):
+        """
+        验证帧的校验和
+        
+        Args:
+            frame: 完整的帧数据（包含校验和）
+        
+        Returns:
+            bool: 校验通过返回True，否则返回False
+        """
+        if len(frame) < FRAME_LEN:
+            return False
+        
+        # 获取帧中的校验和
+        received_checksum = frame[CHECKSUM_POS]
+        
+        # 计算前25字节的累加和（帧头+数据部分）
+        calculated_checksum = self.calculate_checksum(frame[:CHECKSUM_POS])
+        
+        # 验证
+        return received_checksum == calculated_checksum
+    
     def print_header(self):
         """打印表头"""
-        print("\n" + "=" * 120)
+        print("\n" + "=" * 130)
         print(f"{'帧数':>6} | {'线性 X':>10} | {'线性 Y':>10} | {'线性 Z':>10} | "
               f"{'角速 X':>10} | {'角速 Y':>10} | {'角速 Z':>10} | "
-              f"{'位置 X':>8} | {'位置 Y':>8} | {'朝向':>8}")
-        print("=" * 120)
+              f"{'位置 X':>8} | {'位置 Y':>8} | {'朝向':>8} | {'校验':>6}")
+        print("=" * 130)
     
     def serial_reader_thread(self):
         """串口读取线程"""
@@ -108,9 +138,29 @@ class STM32OdomReceiver(Node):
                     while len(self.buffer) >= FRAME_LEN:
                         if self.buffer[0] == FRAME_HEAD:
                             frame = self.buffer[:FRAME_LEN]
-                            self.process_one_frame(frame)
-                            self.buffer = self.buffer[FRAME_LEN:]
+                            
+                            # 验证校验和
+                            if self.verify_checksum(frame):
+                                self.process_one_frame(frame)
+                                self.buffer = self.buffer[FRAME_LEN:]
+                            else:
+                                # 校验和错误，丢弃这一帧
+                                self.checksum_error_count += 1
+                                self.error_count += 1
+                                self.get_logger().warn(
+                                    f"⚠️ 校验和错误！第 {self.checksum_error_count} 次，丢弃此帧"
+                                )
+                                # 打印错误信息便于调试
+                                if self.checksum_error_count <= 5:  # 只打印前5次
+                                    received_cs = frame[CHECKSUM_POS]
+                                    calc_cs = self.calculate_checksum(frame[:CHECKSUM_POS])
+                                    self.get_logger().debug(
+                                        f"收到校验和: 0x{received_cs:02X}, "
+                                        f"计算校验和: 0x{calc_cs:02X}"
+                                    )
+                                self.buffer = self.buffer[FRAME_LEN:]
                         else:
+                            # 帧头不对，丢弃第一个字节
                             self.buffer.pop(0)
                             self.error_count += 1
                 else:
@@ -144,7 +194,8 @@ class STM32OdomReceiver(Node):
                   f"{twist_msg.angular.x:10.3f} | "
                   f"{twist_msg.angular.y:10.3f} | "
                   f"{twist_msg.angular.z:10.3f} | "
-                  f"{self.x:8.3f} | {self.y:8.3f} | {self.theta:8.3f}")
+                  f"{self.x:8.3f} | {self.y:8.3f} | {self.theta:8.3f} | "
+                  f"{'✓':>6}")
             
             # 发布原始Twist消息
             self.vehicle_info_pub.publish(twist_msg)
@@ -252,9 +303,12 @@ class STM32OdomReceiver(Node):
         print("\n" + "=" * 60)
         print("📊 最终统计")
         print(f"总接收帧数: {self.frame_count}")
-        print(f"错误帧数: {self.error_count}")
-        if self.frame_count > 0:
-            print(f"错误率: {(self.error_count/self.frame_count*100):.2f}%")
+        print(f"总错误帧数: {self.error_count}")
+        print(f"校验和错误帧数: {self.checksum_error_count}")
+        if self.frame_count + self.error_count > 0:
+            total_frames = self.frame_count + self.error_count
+            success_rate = (self.frame_count / total_frames * 100)
+            print(f"成功率: {success_rate:.2f}%")
         print(f"最终位置: X={self.x:.3f}m, Y={self.y:.3f}m, Theta={self.theta:.3f}rad")
         print("=" * 60)
         

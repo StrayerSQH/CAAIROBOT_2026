@@ -16,7 +16,7 @@ def generate_launch_description():
     nav2_bringup_dir = get_package_share_directory('nav2_bringup')
     
     # ========== 配置文件路径 ==========
-    default_map_path = os.path.join(navigation_dir, 'maps', 'map.yaml')
+    default_map_path = os.path.join(navigation_dir, 'maps', '2JL.yaml')
     default_params_path = os.path.join(navigation_dir, 'config', 'nav2_params.yaml')
     
     # 🔧 关键：使用你自己的 RViz 配置文件（保存你之前配置好的界面）

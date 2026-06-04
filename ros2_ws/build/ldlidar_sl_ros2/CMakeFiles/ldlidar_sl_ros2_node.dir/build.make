@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/strayer/ros2_ws/src/ldlidar_sl_ros2
+CMAKE_SOURCE_DIR = /home/s/ros2_ws/src/ldlidar_sl_ros2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/strayer/ros2_ws/build/ldlidar_sl_ros2
+CMAKE_BINARY_DIR = /home/s/ros2_ws/build/ldlidar_sl_ros2
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ldlidar_sl_ros2_node.dir/depend.make
@@ -70,102 +70,102 @@ include CMakeFiles/ldlidar_sl_ros2_node.dir/progress.make
 include CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/src/demo.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.s
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/ldlidar_driver.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.s
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/lipkg.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.s
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/log_module.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.s
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/serial_interface_linux.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.s
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/sl_transform.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.s
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/flags.make
-CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o: /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp
+CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o: /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o: CMakeFiles/ldlidar_sl_ros2_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o -c /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o -MF CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o.d -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o -c /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp > CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.i
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strayer/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/s/ros2_ws/src/ldlidar_sl_ros2/ldlidar_driver/src/slbf.cpp -o CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.s
 
 # Object files for target ldlidar_sl_ros2_node
 ldlidar_sl_ros2_node_OBJECTS = \
@@ -256,7 +256,7 @@ ldlidar_sl_ros2_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
-ldlidar_sl_ros2_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+ldlidar_sl_ros2_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_cpp.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
@@ -267,7 +267,7 @@ ldlidar_sl_ros2_node: /opt/ros/humble/lib/librcpputils.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 ldlidar_sl_ros2_node: /opt/ros/humble/lib/librcutils.so
 ldlidar_sl_ros2_node: CMakeFiles/ldlidar_sl_ros2_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ldlidar_sl_ros2_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ldlidar_sl_ros2_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ldlidar_sl_ros2_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -279,6 +279,6 @@ CMakeFiles/ldlidar_sl_ros2_node.dir/clean:
 .PHONY : CMakeFiles/ldlidar_sl_ros2_node.dir/clean
 
 CMakeFiles/ldlidar_sl_ros2_node.dir/depend:
-	cd /home/strayer/ros2_ws/build/ldlidar_sl_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/strayer/ros2_ws/src/ldlidar_sl_ros2 /home/strayer/ros2_ws/src/ldlidar_sl_ros2 /home/strayer/ros2_ws/build/ldlidar_sl_ros2 /home/strayer/ros2_ws/build/ldlidar_sl_ros2 /home/strayer/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles/ldlidar_sl_ros2_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/s/ros2_ws/build/ldlidar_sl_ros2 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/s/ros2_ws/src/ldlidar_sl_ros2 /home/s/ros2_ws/src/ldlidar_sl_ros2 /home/s/ros2_ws/build/ldlidar_sl_ros2 /home/s/ros2_ws/build/ldlidar_sl_ros2 /home/s/ros2_ws/build/ldlidar_sl_ros2/CMakeFiles/ldlidar_sl_ros2_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ldlidar_sl_ros2_node.dir/depend
 

@@ -8,10 +8,15 @@ setup.py
 ../../build/navigation/navigation.egg-info/requires.txt
 ../../build/navigation/navigation.egg-info/top_level.txt
 ../../build/navigation/navigation.egg-info/zip-safe
+config/nav2_params (copy).yaml
 config/nav2_params.yaml
 launch/navigation2.launch.py
+maps/2JL.pgm
+maps/2JL.yaml
 maps/map.pgm
 maps/map.yaml
+maps/my_map.pgm
+maps/my_map.yaml
 navigation/__init__.py
 resource/navigation
 test/test_copyright.py
