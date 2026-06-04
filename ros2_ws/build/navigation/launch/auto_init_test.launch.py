@@ -1,1 +1,0 @@
-/home/s/ros2_ws/src/navigation/launch/auto_init_test.launch.py

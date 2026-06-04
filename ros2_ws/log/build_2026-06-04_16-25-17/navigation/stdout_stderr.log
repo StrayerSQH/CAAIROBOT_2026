@@ -1,0 +1,35 @@
+running develop
+running egg_info
+creating navigation.egg-info
+writing navigation.egg-info/PKG-INFO
+writing dependency_links to navigation.egg-info/dependency_links.txt
+writing entry points to navigation.egg-info/entry_points.txt
+writing requirements to navigation.egg-info/requires.txt
+writing top-level names to navigation.egg-info/top_level.txt
+writing manifest file 'navigation.egg-info/SOURCES.txt'
+reading manifest file 'navigation.egg-info/SOURCES.txt'
+writing manifest file 'navigation.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/s/ros2_ws/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+Installing auto_navigator script to /home/s/ros2_ws/install/navigation/lib/navigation
+
+Installed /home/s/ros2_ws/build/navigation
+running symlink_data
+creating /home/s/ros2_ws/install/navigation/share/ament_index
+creating /home/s/ros2_ws/install/navigation/share/ament_index/resource_index
+creating /home/s/ros2_ws/install/navigation/share/ament_index/resource_index/packages
+symbolically linking /home/s/ros2_ws/build/navigation/resource/navigation -> /home/s/ros2_ws/install/navigation/share/ament_index/resource_index/packages
+symbolically linking /home/s/ros2_ws/build/navigation/package.xml -> /home/s/ros2_ws/install/navigation/share/navigation
+creating /home/s/ros2_ws/install/navigation/share/navigation/launch
+symbolically linking /home/s/ros2_ws/build/navigation/launch/auto_navigate_test.launch.py -> /home/s/ros2_ws/install/navigation/share/navigation/launch
+symbolically linking /home/s/ros2_ws/build/navigation/launch/navigation2.launch.py -> /home/s/ros2_ws/install/navigation/share/navigation/launch
+creating /home/s/ros2_ws/install/navigation/share/navigation/config
+symbolically linking /home/s/ros2_ws/build/navigation/config/nav2_params (copy).yaml -> /home/s/ros2_ws/install/navigation/share/navigation/config
+symbolically linking /home/s/ros2_ws/build/navigation/config/nav2_params.yaml -> /home/s/ros2_ws/install/navigation/share/navigation/config
+creating /home/s/ros2_ws/install/navigation/share/navigation/maps
+symbolically linking /home/s/ros2_ws/build/navigation/maps/2JL.yaml -> /home/s/ros2_ws/install/navigation/share/navigation/maps
+symbolically linking /home/s/ros2_ws/build/navigation/maps/my_map.yaml -> /home/s/ros2_ws/install/navigation/share/navigation/maps
+symbolically linking /home/s/ros2_ws/build/navigation/maps/map.yaml -> /home/s/ros2_ws/install/navigation/share/navigation/maps
+symbolically linking /home/s/ros2_ws/build/navigation/maps/2JL.pgm -> /home/s/ros2_ws/install/navigation/share/navigation/maps
+symbolically linking /home/s/ros2_ws/build/navigation/maps/map.pgm -> /home/s/ros2_ws/install/navigation/share/navigation/maps
+symbolically linking /home/s/ros2_ws/build/navigation/maps/my_map.pgm -> /home/s/ros2_ws/install/navigation/share/navigation/maps

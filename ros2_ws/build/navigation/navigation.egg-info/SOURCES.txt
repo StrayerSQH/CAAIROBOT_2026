@@ -1,16 +1,9 @@
 package.xml
 setup.cfg
 setup.py
-../../build/navigation/navigation.egg-info/PKG-INFO
-../../build/navigation/navigation.egg-info/SOURCES.txt
-../../build/navigation/navigation.egg-info/dependency_links.txt
-../../build/navigation/navigation.egg-info/entry_points.txt
-../../build/navigation/navigation.egg-info/requires.txt
-../../build/navigation/navigation.egg-info/top_level.txt
-../../build/navigation/navigation.egg-info/zip-safe
 config/nav2_params (copy).yaml
 config/nav2_params.yaml
-launch/auto_init_test.launch.py
+launch/auto_navigate_test.launch.py
 launch/navigation2.launch.py
 maps/2JL.pgm
 maps/2JL.yaml
@@ -19,7 +12,7 @@ maps/map.yaml
 maps/my_map.pgm
 maps/my_map.yaml
 navigation/__init__.py
-navigation/auto_initializer.py
+navigation/auto_navigator.py
 navigation.egg-info/PKG-INFO
 navigation.egg-info/SOURCES.txt
 navigation.egg-info/dependency_links.txt

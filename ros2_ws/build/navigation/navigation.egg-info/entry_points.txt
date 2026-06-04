@@ -1,3 +1,4 @@
 [console_scripts]
 auto_initializer = navigation.auto_initializer:main
+auto_navigator = navigation.auto_navigator:main
 

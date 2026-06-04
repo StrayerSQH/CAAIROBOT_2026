@@ -1,0 +1,1 @@
+/home/s/ros2_ws/build/navigation/launch/auto_navigate_test.launch.py
