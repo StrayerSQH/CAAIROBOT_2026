@@ -1,0 +1,42 @@
+[0.018s] Invoking command in '/home/s/ros2_ws/build/ldlidar_sl_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/s/ros2_ws/build/ldlidar_sl_ros2 -- -j16 -l16
+[0.209s] [ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/slbf.cpp.o[0m
+[0.209s] [ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/sl_transform.cpp.o[0m
+[0.209s] [ 37%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/src/demo.cpp.o[0m
+[0.209s] [ 50%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/lipkg.cpp.o[0m
+[0.209s] [ 62%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/ldlidar_driver.cpp.o[0m
+[0.209s] [ 87%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/log_module.cpp.o[0m
+[0.209s] [ 87%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_ros2_node.dir/ldlidar_driver/src/serial_interface_linux.cpp.o[0m
+[3.395s] [100%] [32m[1mLinking CXX executable ldlidar_sl_ros2_node[0m
+[3.584s] [100%] Built target ldlidar_sl_ros2_node
+[3.592s] Invoked command in '/home/s/ros2_ws/build/ldlidar_sl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/s/ros2_ws/build/ldlidar_sl_ros2 -- -j16 -l16
+[3.599s] Invoking command in '/home/s/ros2_ws/build/ldlidar_sl_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/s/ros2_ws/build/ldlidar_sl_ros2
+[3.607s] -- Install configuration: ""
+[3.609s] -- Installing: /home/s/ros2_ws/install/ldlidar_sl_ros2/lib/ldlidar_sl_ros2/ldlidar_sl_ros2_node
+[3.610s] -- Set runtime path of "/home/s/ros2_ws/install/ldlidar_sl_ros2/lib/ldlidar_sl_ros2/ldlidar_sl_ros2_node" to ""
+[3.610s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch
+[3.610s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/viewer_ld14p.launch.py
+[3.610s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/ld14.launch.py
+[3.610s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/ld14p.launch.py
+[3.610s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/viewer_ld14.launch.py
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//rviz2
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//rviz2/ldlidar.rviz
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/create_udev_rules.sh
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/delete_udev_rules.sh
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/ldlidar.rules
+[3.611s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_sl_ros2
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_sl_ros2
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/ament_prefix_path.sh
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/ament_prefix_path.dsv
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/path.sh
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/path.dsv
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.bash
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.sh
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.zsh
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.dsv
+[3.612s] -- Installing: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/package.dsv
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/packages/ldlidar_sl_ros2
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/cmake/ldlidar_sl_ros2Config.cmake
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/cmake/ldlidar_sl_ros2Config-version.cmake
+[3.612s] -- Up-to-date: /home/s/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/package.xml
+[3.614s] Invoked command in '/home/s/ros2_ws/build/ldlidar_sl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/s/ros2_ws/build/ldlidar_sl_ros2

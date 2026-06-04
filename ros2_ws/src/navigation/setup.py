@@ -35,6 +35,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            # 添加可执行脚本入口点
+            'auto_initializer = navigation.auto_initializer:main',
         ],
     },
 )

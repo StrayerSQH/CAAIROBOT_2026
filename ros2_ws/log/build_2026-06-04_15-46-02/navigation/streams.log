@@ -1,0 +1,21 @@
+[0.563s] Invoking command in '/home/s/ros2_ws/src/navigation': PYTHONPATH=/home/s/ros2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/s/ros2_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/s/ros2_ws/build/navigation/build install --record /home/s/ros2_ws/build/navigation/install.log --single-version-externally-managed install_data
+[0.716s] running egg_info
+[0.717s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[0.718s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[0.718s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[0.718s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[0.718s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[0.718s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[0.719s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[0.719s] running build
+[0.719s] running build_py
+[0.719s] running install
+[0.719s] running install_lib
+[0.720s] running install_data
+[0.720s] running install_egg_info
+[0.722s] removing '/home/s/ros2_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[0.723s] Copying ../../build/navigation/navigation.egg-info to /home/s/ros2_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[0.723s] running install_scripts
+[0.738s] Installing auto_initializer script to /home/s/ros2_ws/install/navigation/lib/navigation
+[0.738s] writing list of installed files to '/home/s/ros2_ws/build/navigation/install.log'
+[0.764s] Invoked command in '/home/s/ros2_ws/src/navigation' returned '0': PYTHONPATH=/home/s/ros2_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/s/ros2_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/s/ros2_ws/build/navigation/build install --record /home/s/ros2_ws/build/navigation/install.log --single-version-externally-managed install_data

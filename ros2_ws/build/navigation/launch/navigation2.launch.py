@@ -1,0 +1,1 @@
+/home/s/ros2_ws/src/navigation/launch/navigation2.launch.py
